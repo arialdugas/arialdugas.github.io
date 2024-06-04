@@ -16,7 +16,8 @@ nav {
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 50px; 
+    border-style: dotted;
 }
 h1 {
     display: flex;
@@ -32,6 +33,7 @@ h1 {
     display: inline-block;
     padding: 0 10px;
     border-radius: 50px;
+    border-style: dotted;
 }
 a {
     text-decoration: none;
@@ -43,6 +45,7 @@ main {
     background: rgb(105, 60, 42);
     display: flex;
     border-radius: 50px;
+    border-style: dotted;
 }
 .sidebar {
     margin-right: 25px;
@@ -51,6 +54,7 @@ main {
 .sidebar-img {
     width: 200px;
     border-radius: 50px;
+    border-style: dotted;
 }
 .content {
     flex: 1;
@@ -67,7 +71,7 @@ h2, h3 {
 }
 /* portfolio styles */
 .content h1 {
-    color: #3f8058;
+    color: rgb(98, 138, 106);
 }
 
 #portfolio {
@@ -76,7 +80,7 @@ h2, h3 {
 }
 
 #portfolio li {
-    background: #bee7b1;
+    background: #adebb7;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -88,7 +92,7 @@ h2, h3 {
 
 #portfolio a {
     text-decoration: none;
-    color: #3f8058;
+    color: rgb(98, 138, 106);
 }
  /* responsive web design */
  @media screen and (min-width: 120px) and (max-width: 1080px) {
