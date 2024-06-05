@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+    for (let i = 100; i < canvas.width; i += 100) {
+       createPlatform(i, canvas.height, -1, -canvas.height);
+     }
+     for (let i = 100; i < canvas.height; i += 100) {
+       createPlatform(canvas.width, i, -canvas.width, -1);
+     }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -42,9 +42,13 @@ $(function () {
     // TODO 1
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
-    // example usage: createPlatform(x,y,width,height)
-
-
+    // createPlatform(100,200,50,100)
+    createPlatform(170,650,100,50)
+    createPlatform(400,560,100,20)
+    createPlatform(630,470,85,100)
+    createPlatform(500,300,200,50)
+    createPlatform(800,360,150,20)
+    createPlatform(200,250,200,20)
 
     
     // TODO 2
@@ -52,7 +56,10 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
+    createCollectable('grace', 350, 300, 90, 0)
+    createCollectable('baby', 700, 400, 60, .10)
+    createCollectable('Amy', 560, 260, 20, .0)
+    
 
 
 
@@ -61,6 +68,10 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
+    createCannon("bottom", 300, 1000, 50, 50)
+    createCannon("right", 300, 2000, 50, 50)
+    createCannon("left", 375, 3000, 50, 75)
+    createCannon("top", 800, 2200, 35, 35)
 
 
 
