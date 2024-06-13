@@ -49,7 +49,7 @@
         // Every 50 milliseconds, call the update Function (see below)
         setInterval(update, 50);
      
-        
+
         // Every time the box is clicked, call the handleBoxClick Function (see below)
         box.on("click", handleBoxClick);
 
@@ -76,6 +76,7 @@
         var positionY = 100;
         var speedY = 10;
         // var boardHeight = jQuery(window).height();
+        
 
         /*
             This Function will be called 20 times/second. Each time it is called,
@@ -100,6 +101,7 @@
             speedX = -speedX;
           }
         }
+
 
         /*
             This Function will be called each time the box is clicked. Each time it is called,
